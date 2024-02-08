@@ -1,8 +1,8 @@
 // * Sections
 export { HeroSection } from './sections/hero-section'
-export { ServicesSection } from './sections/services-section'
 export { ProjectsSection } from './sections/projects-section'
 export { ContactSection } from './sections/contact-section'
+export { ExperienceSection } from './sections/experience-section'
 
 // * Common components
 export { SectionTitle } from './common/section-title'
@@ -12,9 +12,9 @@ export { TextArea } from './common/text-area'
 // * Ui Components
 export { NavItem } from './ui/navbar/nav-item'
 export { Navbar } from './ui/navbar/nav-bar'
-// * Services
-export { ServicesContainer } from './ui/services/services-container'
-export { ServiceCard } from './ui/services/service-card'
+// * Experience
+export { Timeline } from './ui/timeline/timeline'
+export { TimelineCard } from './ui/timeline/timeline-card'
 // * Proyects
 export { Project } from './ui/projects/project'
 export { ProjectHover } from './ui/projects/project-hover'

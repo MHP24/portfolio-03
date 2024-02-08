@@ -1,15 +1,15 @@
 import {
   ContactSection,
+  ExperienceSection,
   HeroSection,
-  ProjectsSection,
-  ServicesSection
+  ProjectsSection
 } from '@/components'
 
 const Page = () => {
   return (
     <>
       <HeroSection/>
-      <ServicesSection/>
+      <ExperienceSection/>
       <ProjectsSection/>
       <ContactSection/>
     </>

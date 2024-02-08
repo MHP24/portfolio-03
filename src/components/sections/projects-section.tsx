@@ -4,8 +4,7 @@ import { projects } from '@/constants'
 export const ProjectsSection = () => {
   return (
     <section className='h-screen w-full
-      bg-hero bg-cover bg-no-repeat bg-fixed bg-center
-      px-4 overflow-hidden relative'
+      px-4 overflow-hidden relative bg-c4'
     >
       <div className='px-6 h-full'>
         <SectionTitle title='proyectos'/>

@@ -2,7 +2,7 @@ import { secondaryFont } from '@/fonts'
 
 export const HeroSection = () => {
   return (
-    <section className='h-screen w-full bg-hero bg-cover bg-no-repeat bg-fixed bg-center
+    <section className='h-screen w-full bg-mainBg bg-center bg-fixed bg-no-repeat
       px-4 flex relative overflow-hidden'
     >
 
