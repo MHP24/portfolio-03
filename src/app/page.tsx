@@ -1,9 +1,10 @@
-import { Hero } from '@/components'
+import { HeroSection, ServicesSection } from '@/components'
 
 const Page = () => {
   return (
     <>
-      <Hero/>
+      <HeroSection/>
+      <ServicesSection/>
     </>
   )
 }

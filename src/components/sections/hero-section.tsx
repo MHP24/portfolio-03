@@ -1,9 +1,10 @@
 import { secondaryFont } from '@/fonts'
 
-export const Hero = () => {
+export const HeroSection = () => {
   return (
     <section className='h-screen w-full bg-hero bg-cover bg-no-repeat bg-fixed bg-center
-px-4 flex relative overflow-hidden'>
+      px-4 flex relative overflow-hidden'
+    >
 
       <div className='h-full flex flex-col justify-center gap-40 px-6 z-10'>
         <h1 className='text-5xl md:text-7xl lg:text-8xl'>
@@ -16,7 +17,7 @@ px-4 flex relative overflow-hidden'>
       </div>
 
       <div className='grid items-center bg-c3-1 h-[80%] w-8/12 m-auto md:w-auto
-    md:aspect-6/7 absolute right-0 md:right-16 bottom-0 z-0 opacity-70 lg:opacity-100'>
+        md:aspect-6/7 absolute right-0 md:right-16 bottom-0 z-0 opacity-70 lg:opacity-100'>
       </div>
     </section>
 
