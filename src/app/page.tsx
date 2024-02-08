@@ -1,4 +1,9 @@
-import { HeroSection, ProjectsSection, ServicesSection } from '@/components'
+import {
+  ContactSection,
+  HeroSection,
+  ProjectsSection,
+  ServicesSection
+} from '@/components'
 
 const Page = () => {
   return (
@@ -6,6 +11,7 @@ const Page = () => {
       <HeroSection/>
       <ServicesSection/>
       <ProjectsSection/>
+      <ContactSection/>
     </>
   )
 }

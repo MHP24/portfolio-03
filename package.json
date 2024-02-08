@@ -3,7 +3,7 @@
   "version": "3.0",
   "private": true,
   "scripts": {
-    "start:dev": "next dev --turbo",
+    "start:dev": "next dev",
     "start:prod": "next start",
     "build": "next build",
     "lint": "eslint -- --init"
@@ -11,7 +11,8 @@
   "dependencies": {
     "next": "14.1.0",
     "react": "18",
-    "react-dom": "18"
+    "react-dom": "18",
+    "react-hook-form": "7.50.1"
   },
   "devDependencies": {
     "@types/node": "20",
