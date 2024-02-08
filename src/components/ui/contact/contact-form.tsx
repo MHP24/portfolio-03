@@ -34,7 +34,7 @@ export const ContactForm = () => {
         <Input
           {...register('subject', { required: true })}
           name='subject'
-          placeholder='¿Qué deseas saber?'
+          placeholder='¿Qué necesitas?'
           type='text'
           label='Asunto'
           isValid={!errors.subject}

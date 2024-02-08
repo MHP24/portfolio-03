@@ -8,6 +8,8 @@ export { ExperienceSection } from './sections/experience-section'
 export { SectionTitle } from './common/section-title'
 export { Input } from './common/input'
 export { TextArea } from './common/text-area'
+export { Footer } from './common/footer'
+export { Logo } from './common/logo'
 
 // * Ui Components
 export { NavItem } from './ui/navbar/nav-item'
@@ -17,7 +19,6 @@ export { Timeline } from './ui/timeline/timeline'
 export { TimelineCard } from './ui/timeline/timeline-card'
 // * Proyects
 export { Project } from './ui/projects/project'
-export { ProjectHover } from './ui/projects/project-hover'
 export { ProjectPanel } from './ui/projects/project-panel'
 // * Contact
 export { ContactForm } from './ui/contact/contact-form'

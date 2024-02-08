@@ -1,5 +1,5 @@
 import { type FC } from 'react'
-import { Project, ProjectHover } from '@/components'
+import { Project } from '@/components'
 import { type TProject } from '@/types'
 
 type Props = {
@@ -8,12 +8,10 @@ type Props = {
 
 export const ProjectPanel: FC<Props> = ({ projects }) => {
   return (
-    <ul className='h-full lg:w-4/6 grid sm:grid-cols-2 gap-3 overflow-y-scroll p-4 pl-0'>
+    <ul className='h-full grid grid-cols-3 gap-6'>
       {
         projects.map((project, i) => (
-          <Project key={`project-${project.title}-${i}`} {...project}>
-            <ProjectHover {...project}/>
-          </Project>
+          <Project key={`project-${project.title}-${i}`} {...project}/>
         ))
       }
     </ul>

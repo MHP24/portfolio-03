@@ -46,21 +46,5 @@ export const projects = [
       production: 'https://marketplace.visualstudio.com/items?itemName=PanaMiguel.mh-theme'
     },
     asset: 'mh-theme.jpg'
-  },
-  {
-    title: 'Attendance app',
-    links: {
-      repository: 'https://github.com/MHP24/Attendance-App',
-      production: ''
-    },
-    asset: 'attendance-app.jpg'
-  },
-  {
-    title: 'Speech to text',
-    links: {
-      repository: 'https://github.com/MHP24/Speech-to-text',
-      production: ''
-    },
-    asset: 'speech-to-text.jpg'
   }
 ]
