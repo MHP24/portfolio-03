@@ -14,7 +14,7 @@ export const ServiceCard: FC<TService> = ({ title, description, startsVisible })
         className='select-none flex justify-between items-center'
       >
         <div className='h-10'>
-          <h3 className='text-xl sm:text-3xl font-primary'>
+          <h3 className='text-xl sm:text-3xl'>
             <span className='font-bold'>{title.at(0)}</span>{title.slice(1, title.length)}
           </h3>
         </div>
@@ -29,7 +29,7 @@ export const ServiceCard: FC<TService> = ({ title, description, startsVisible })
       {
         isOpen && (
           <div className='mt-1'>
-            <p className='text-lg sm:text-xl font-primary'>{description}</p>
+            <p className='text-lg sm:text-xl'>{description}</p>
           </div>
         )
       }
