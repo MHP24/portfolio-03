@@ -22,8 +22,7 @@ const config: Config = {
         c8: '#1A1A1A'
       },
       backgroundImage: {
-        mainBg: 'url(/backgrounds/home.svg)',
-        heroBg: 'url(/backgrounds/hero.svg)'
+        mainBg: 'url(/backgrounds/home.svg)'
       },
       aspectRatio: {
         '6/7': '6/7'

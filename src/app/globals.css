@@ -6,3 +6,34 @@
 * {
   scroll-behavior: smooth;
 }
+
+
+.fade {
+  animation: fadeIn .8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+.rightToLeft {
+  animation: rightToLeft .7s ease-in;
+}
+
+@keyframes rightToLeft {
+  from {
+    opacity: 0%;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateX(0%);
+  }
+}
