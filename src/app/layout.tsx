@@ -7,7 +7,7 @@ import './globals.css'
 // * Components
 // import { Navbar } from '@/components'
 import { metadata } from '@/constants'
-import { Footer } from '@/components'
+import { Footer, Navbar } from '@/components'
 
 export const pageMetadata = metadata
 
@@ -18,9 +18,9 @@ export default function RootLayout ({
 }>) {
   return (
     <html lang='en' className='bg-c1 bg-mainBg bg-center bg-fixed bg-cover'>
-      <body className={`${mainFont.className} text-c3 border-2 border-c3-1 w-[80%] mx-auto`}>
-        {/* <Navbar/> */}
-        <main className='min-h-screen z-10'>
+      <body className={`${mainFont.className} text-c3  max-w-[1920px] mx-auto`}>
+        <Navbar/>
+        <main className='min-h-screen ml-20 z-10'>
           { children }
         </main>
 

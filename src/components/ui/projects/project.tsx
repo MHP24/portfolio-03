@@ -1,10 +1,10 @@
-import { type FC, type PropsWithChildren } from 'react'
+import { type FC } from 'react'
 import Image from 'next/image'
 import { type TProject } from '@/types'
 
-export const Project: FC<PropsWithChildren<TProject>> = ({ children, asset, title }) => {
+export const Project: FC<TProject> = ({ asset, title }) => {
   return (
-    <li className='aspect-video relative bg-c6 rounded-lg'
+    <div className='aspect-video relative bg-c6 rounded-lg'
     >
       <div className='z-10'>
         <Image
@@ -16,6 +16,6 @@ export const Project: FC<PropsWithChildren<TProject>> = ({ children, asset, titl
           height={200}
         />
       </div>
-    </li>
+    </div>
   )
 }

@@ -2,15 +2,15 @@ import { secondaryFont } from '@/fonts'
 
 export const HeroSection = () => {
   return (
-    <section className='h-screen w-full
+    <section
+      id='inicio'
+      className='h-screen w-full bg-heroBg bg-fixed bg-cover bg-no-repeat bg-center
       px-4 flex relative overflow-hidden'
     >
 
-      <div className='h-full flex flex-col justify-center gap-40 px-6 z-10'>
-        <h1 className='text-5xl md:text-7xl lg:text-7xl'>
-          <span className='text-6xl sm:text-8xl font-bold'>M</span>iguel&nbsp; <br className='block sm:hidden'/>
-          <span className='text-6xl sm:text-8xl font-bold'>H</span>enríquez <br/>
-          <span className='text-6xl sm:text-8xl font-bold'>P</span>acheco
+      <div className='h-full flex flex-col justify-center items-center w-full gap-40 px-6 z-10'>
+        <h1 className='text-5xl md:text-7xl text-center font-semibold'>
+          {'Miguel Henríquez Pacheco'}
         </h1>
 
         <h2 className={`${secondaryFont.className} text-3xl sm:text-4xl`}>Desarrollador full stack</h2>
