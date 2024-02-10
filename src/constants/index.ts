@@ -1,4 +1,6 @@
 export { metadata } from './metadata'
-export { services } from './services'
+export { timeline } from './timeline'
 export { projects } from './projects'
 export { contactMedias } from './contact'
+export { webSections } from './web-sections'
+export { textColors } from './text-colors'

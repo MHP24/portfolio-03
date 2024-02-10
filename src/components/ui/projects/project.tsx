@@ -1,34 +1,21 @@
-'use client'
-
-import { type FC, type PropsWithChildren, useState } from 'react'
+import { type FC } from 'react'
 import Image from 'next/image'
 import { type TProject } from '@/types'
 
-export const Project: FC<PropsWithChildren<TProject>> = ({ children, asset, title }) => {
-  const [isHover, setIsHover] = useState<boolean>(false)
-
+export const Project: FC<TProject> = ({ asset, title }) => {
   return (
-    <li className='w-full h-full aspect-video relative bg-c6 rounded-lg'
-      onMouseEnter={() => { setIsHover(true) }}
-      onMouseLeave={() => { setIsHover(false) }}
+    <div className='aspect-video relative bg-c6 rounded-lg'
     >
-      {
-        isHover && (
-          <>
-            { children }
-          </>
-        )
-
-      }
       <div className='z-10'>
         <Image
           priority={true}
-          className='absolute rounded-xl border-c3-1 border-2'
+          className='rounded-xl border-c3-1 border-2'
           src={`/img/projects/${asset}`}
           alt={`proyecto ${title}`}
-          fill
+          width={350}
+          height={200}
         />
       </div>
-    </li>
+    </div>
   )
 }

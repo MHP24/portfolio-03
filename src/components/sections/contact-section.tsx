@@ -1,35 +1,29 @@
-import { ContactForm, ContactMedias, SectionTitle } from '@/components'
-import { contactMedias } from '@/constants'
+import { ContactForm } from '@/components'
 
 export const ContactSection = () => {
   return (
-    <section className='min-h-screen lg:h-screen w-full
-      bg-hero bg-cover bg-no-repeat bg-fixed bg-center
-      px-10 overflow-hidden'
+    <section
+      id='contacto'
+      className='border-t-[2px] border-c3-1 w-full py-10 bg-c1
+        px-10 md:px-0'
     >
-
-      <SectionTitle title='Contacto'/>
-
-      <div className='grid lg:grid-cols-2 h-full px-4 gap-6'>
-        <div className='relative'>
-
-          <div className='flex flex-col gap-10 mt-2 bg-c6 w-full lg:w-fit
-            py-5 px-10 h-min rounded-lg border-2 border-c3-1 z-10 relative'>
-
-            <h3 className='text-3xl text-start'><strong>M</strong>is redes</h3>
-            <ContactMedias data={contactMedias}/>
-
-          </div>
-          {/*  */}
-          <div className='hidden lg:grid lg:items-center absolute w-[70%] h-[90%] top-0 right-6 z-0 bg-c3-1'>
-          </div>
-
-        </div>
-
-        <div className='py-6 lg:py-0'>
+      <div className='m-auto w-full max-w-[62rem]'>
+        <h3 className='text-center my-5 text-4xl font-bold
+          bg-gradient-to-r from-purple-700 to-blue-500 bg-clip-text text-transparent'
+        >
+          <span className='bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent'>
+            Trabajemos
+          </span>
+          <span className='bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent'>
+            {' juntos'}
+          </span>
+        </h3>
+        <div className='max-w-[38rem] mx-auto my-10'>
+          <h4 className='text-center text-xl opacity-70 mb-10'>
+            Lleva tus ideas y soluciones a la realidad, todo es posible.
+            Y si algo no existe, lo creo por ti</h4>
           <ContactForm/>
         </div>
-
       </div>
 
     </section>
