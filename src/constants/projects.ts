@@ -40,11 +40,43 @@ export const projects = [
     asset: 'abstract-mh.jpg'
   },
   {
+    title: 'Run JS Web',
+    links: {
+      repository: 'https://github.com/MHP24/run-js-web',
+      production: 'https://run-js.mg-hp.com/'
+    },
+    asset: 'run-js-web.jpg'
+  },
+  {
+    title: 'Chatbot Web',
+    links: {
+      repository: 'https://github.com/MHP24/chatbot-web',
+      production: 'https://chat.mg-hp.com/files/scripts/chat/main.js'
+    },
+    asset: 'chatbot-web.jpg'
+  },
+  {
+    title: 'Papa Johns API',
+    links: {
+      repository: 'https://github.com/MHP24/papa-johns-api',
+      production: 'https://papa-johns-api.mg-hp.com/api/v1/docs'
+    },
+    asset: 'papa-johns-api.jpg'
+  },
+  {
     title: 'MH Theme',
     links: {
       repository: 'https://github.com/MHP24/vsc-mh-theme',
       production: 'https://marketplace.visualstudio.com/items?itemName=PanaMiguel.mh-theme'
     },
     asset: 'mh-theme.jpg'
+  },
+  {
+    title: 'Speech to text',
+    links: {
+      repository: 'https://github.com/MHP24/Speech-to-text',
+      production: ''
+    },
+    asset: 'speech-to-text.jpg'
   }
 ]
