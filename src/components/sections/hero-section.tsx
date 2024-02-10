@@ -8,9 +8,9 @@ export const HeroSection = () => {
       px-4 relative'
     >
 
-      <div className='h-full flex flex-col items-start w-full px-20 justify-center z-1'
+      <div className='h-full flex flex-col items-center text-center md:text-start md:items-start w-full px-20 justify-center z-1'
       >
-        <h1 className='text-8xl font-bold fade'>{'Miguel Henríquez Pacheco'}</h1>
+        <h1 className='text-5xl md:text-7xl lg:text-8xl font-bold fade'>{'Miguel Henríquez Pacheco'}</h1>
 
         <h2 className={`${secondaryFont.className} 
           text-3xl md:text-5xl mt-10 

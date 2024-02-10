@@ -22,7 +22,7 @@ export const TimelineCard: FC<Props> = ({ title, date, description, latest }) =>
           {/* First timeline item */}
           {
             latest &&
-          <span className='bg-c3 text-c2 font-bold text-md me-2 px-2.5 py-0.5 rounded ms-3'>M&aacute;s reciente</span>
+          <span className='bg-c3 text-c2 font-bold text-md me-2 px-2.5 py-0.5 rounded ms-3'>Ahora</span>
           }
         </h3>
         <time className='block mb-2 text-lg leading-none text-c3 opacity-90'>

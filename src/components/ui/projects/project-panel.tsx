@@ -8,7 +8,7 @@ type Props = {
 
 export const ProjectPanel: FC<Props> = ({ projects }) => {
   return (
-    <ul className='h-full grid grid-cols-3 gap-6'>
+    <ul className='h-full grid grid-cols-2 md:grid-cols-3 gap-6'>
       {
         projects.map((project, i) => (
           <Project key={`project-${project.title}-${i}`} {...project}/>

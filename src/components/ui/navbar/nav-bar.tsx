@@ -4,7 +4,7 @@ import { webSections } from '@/constants'
 
 export const Navbar = () => {
   return (
-    <nav className='border-r-2 border-c3-1 md:border-none md:block fixed left-0 top-0 w-20 h-screen bg-c8 z-50'>
+    <nav className='border-r-2 border-c3-1 md:border-none hidden sm:block fixed left-0 top-0 w-20 h-screen bg-c8 z-50'>
 
       <ul className='flex flex-col gap-8 h-full'>
         <li>
