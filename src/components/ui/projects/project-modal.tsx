@@ -58,14 +58,15 @@ export const ProjectModal: FC<Props> = ({ id, onClose }) => {
 
                   {/* Information */}
                   <div className='flex flex-col gap-6 justify-between text-start h-full'>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iure libero
-                        quibusdam explicabo fugiat hic deleniti molestias. Odio enim error, dolore, molestiae nostrum modi unde accusamus beatae ullam doloremque quas.
-                    </p>
+                    {
+                      project.description.map((paragraph, i) => (
+                        <p key={`paragraph-${i}-project-${project.id}`}>{paragraph}</p>
+                      ))
+                    }
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iure libero
-                        quibusdam explicabo fugiat hic deleniti molestias. Odio enim
+                      Puedes acceder a los siguientes enlaces para mayor informaci&oacute;n
+                      y tener un mejor acercamiento con este proyecto.
                     </p>
 
                     {/*  Links  */}

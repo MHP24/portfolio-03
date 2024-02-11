@@ -11,5 +11,6 @@ export type TProject = {
   }
   asset: string
   category: ProjectCategory
+  description: string[]
   technologies: Technology[]
 }
