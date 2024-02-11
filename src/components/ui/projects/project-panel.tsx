@@ -1,16 +1,8 @@
 'use client'
 
-import { type FC } from 'react'
+import { useState, type FC } from 'react'
 // * Swiper
 import { Swiper, SwiperSlide } from 'swiper/react'
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Grid,
-  Autoplay
-} from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -18,38 +10,44 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/grid'
 
 // * Own code
-import { Project } from '@/components'
+import { ProjectCard, ProjectModal } from '@/components'
 import { type TProject } from '@/types'
+import { swiperConfig } from '@/config'
 
 type Props = {
   projects: TProject[]
 }
 
 export const ProjectPanel: FC<Props> = ({ projects }) => {
+  const [projectSelected, setProjectSelected] = useState<string | null>(null)
+
+  const handleProjectSelected = (id: string) => {
+    setProjectSelected(id)
+  }
+
   return (
-    <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y, Grid, Autoplay]}
-      spaceBetween={22}
-      slidesPerView={3}
-      autoplay={{
-        delay: 2000,
-        disableOnInteraction: false
-      }}
-      loop
-      navigation
-      pagination={{ clickable: true }}
-      grid = {{
-        rows: 2,
-        fill: 'row'
-      }}
-    >
+    <>
+      <Swiper
+        {...swiperConfig}
+      >
+        {
+          projects.map((project) => (
+            <SwiperSlide
+              key={project.id}
+              onClick={() => { handleProjectSelected(project.id) }}
+            >
+              <ProjectCard {...project}/>
+            </SwiperSlide>
+          ))
+        }
+      </Swiper>
+
+      {/* Project modal on click */}
       {
-        projects.map((project, i) => (
-          <SwiperSlide key={`project-${project.title}-${i}`}>
-            <Project {...project}/>
-          </SwiperSlide>
-        ))
+        projectSelected !== null
+          ? <ProjectModal id={projectSelected}/>
+          : null
       }
-    </Swiper>
+    </>
   )
 }
