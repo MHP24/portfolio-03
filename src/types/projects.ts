@@ -1,3 +1,5 @@
+import { type Technology } from '@/types'
+
 export type ProjectCategory = 'Full-stack' | 'Frontend' | 'Backend'
 
 export type TProject = {
@@ -9,4 +11,5 @@ export type TProject = {
   }
   asset: string
   category: ProjectCategory
+  technologies: Technology[]
 }

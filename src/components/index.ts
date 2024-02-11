@@ -12,6 +12,7 @@ export { Footer } from './common/footer'
 export { Logo } from './common/logo'
 export { Technology } from './common/technologies/technology'
 export { TechnologiesGrid } from './common/technologies/technologies-grid'
+export { LinkButton } from './common/link-button'
 
 // * Ui Components
 export { NavItem } from './ui/navbar/nav-item'

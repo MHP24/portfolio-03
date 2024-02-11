@@ -28,6 +28,7 @@ export default function RootLayout ({
         {/* Used as portal */}
         <div id='modal'></div>
 
+        {/* Chatbot script */}
         <script
           src='https://chat.mg-hp.com/files/scripts/chat/main.js'
           data-mhp-url='https://chat.mg-hp.com'
