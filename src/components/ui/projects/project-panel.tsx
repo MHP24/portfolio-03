@@ -25,6 +25,8 @@ export const ProjectPanel: FC<Props> = ({ projects }) => {
     setProjectSelected(id)
   }
 
+  const closeModal = () => { setProjectSelected(null) }
+
   return (
     <>
       <Swiper
@@ -45,7 +47,7 @@ export const ProjectPanel: FC<Props> = ({ projects }) => {
       {/* Project modal on click */}
       {
         projectSelected !== null
-          ? <ProjectModal id={projectSelected}/>
+          ? <ProjectModal id={projectSelected} onClose={closeModal}/>
           : null
       }
     </>

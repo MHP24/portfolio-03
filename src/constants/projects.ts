@@ -66,7 +66,7 @@ export const projects: TProject[] = [
     },
     asset: 'run-js-web.jpg',
     category: 'Full-stack',
-    technologies: [techs.nextJs, techs.docker, techs.typescript, techs.nodeJs, techs.tailwindCss]
+    technologies: [techs.nextJs, techs.docker, techs.typescript, techs.nestJs, techs.tailwindCss]
   },
   {
     id: 'PJT7',
