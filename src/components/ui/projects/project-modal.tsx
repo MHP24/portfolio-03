@@ -23,14 +23,23 @@ export const ProjectModal: FC<Props> = ({ id, onClose }) => {
           className='absolute top-5 right-5 cursor-pointer font-bold text-xl'
           onClick={onClose}
         >
-                  X
+          X
         </button>
 
         {/* Title */}
-        <h3 className='text-3xl text-start font-bold
-           bg-gradient-to-r bg-clip-text text-transparent from-green-400 to-blue-500'
+        <h3 className='text-3xl text-start font-bold'
         >
-          {project.title}
+          {
+            project.title.split(' ').map((word, i) => (
+              <span
+                key={`word-${word}-${project.id}}-i-${i}`}
+                className={`bg-gradient-to-r ${project.color} bg-clip-text text-transparent`}
+              >
+                {` ${word}`}
+              </span>
+            ))
+          }
+
         </h3>
 
         <hr className='border-[1px] border-c3-1 mb-8 mt-4'/>
@@ -60,15 +69,15 @@ export const ProjectModal: FC<Props> = ({ id, onClose }) => {
               <div className='flex flex-wrap justify-center mb-4 md:mb-0 md:justify-normal gap-4 w-full'>
                 {
                   project.links.production &&
-                        <LinkButton href={project.links.production}>
-                          <Image
-                            src={'svgs/medias/google.svg'}
-                            alt='google'
-                            width={20}
-                            height={20}
-                          />
-                          <span>Visitar producci&oacute;n</span>
-                        </LinkButton>
+                    <LinkButton href={project.links.production}>
+                      <Image
+                        src={'svgs/medias/google.svg'}
+                        alt='google'
+                        width={20}
+                        height={20}
+                      />
+                      <span>Visitar producci&oacute;n</span>
+                    </LinkButton>
                 }
 
                 <LinkButton href={project.links.repository}>

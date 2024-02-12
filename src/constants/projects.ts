@@ -16,7 +16,8 @@ export const projects: TProject[] = [
       ' Este sistema permite administrar acciones entre las que destacan: tabla de posicionamiento (sistema por puntos),' +
       ' usuarios y creación de desafios mediante solicitud.'
     ],
-    technologies: [techs.nextJs, techs.css3, techs.typescript, techs.mongodb]
+    technologies: [techs.nextJs, techs.css3, techs.typescript, techs.mongodb],
+    color: 'from-green-400 to-cyan-400'
   },
   {
     id: 'PJT2',
@@ -32,7 +33,8 @@ export const projects: TProject[] = [
       ' la entrega de información acerca de mis servicios y solicitar o agendar en caso de ser requerido mediante su' +
       ' automatización por correo electrónico.'
     ],
-    technologies: [techs.nodeJs, techs.expressJs, techs.typescript]
+    technologies: [techs.nodeJs, techs.expressJs, techs.typescript],
+    color: 'from-green-300 to-green-600'
   },
   {
     id: 'PJT3',
@@ -47,7 +49,8 @@ export const projects: TProject[] = [
       'Bot de Discord orientado al entretenimiento, este reproduce música, genera imágenes y cuenta chistes. Permite ser' +
       ' utilizado por más de un usuario a la vez y soporta las últimas características de "slash commands" (comandos /).'
     ],
-    technologies: [techs.nodeJs, techs.typescript]
+    technologies: [techs.nodeJs, techs.typescript],
+    color: 'from-blue-500 to-purple-500'
   },
   {
     id: 'PJT4',
@@ -63,7 +66,8 @@ export const projects: TProject[] = [
       ' permite crear salas y establecer la cantidad de rounds junto a su duración por turno (soporte para' +
       ' 2 jugadores en tableros de 3x3). '
     ],
-    technologies: [techs.nodeJs, techs.expressJs, techs.reactJs, techs.tailwindCss, techs.typescript]
+    technologies: [techs.nodeJs, techs.expressJs, techs.reactJs, techs.tailwindCss, techs.typescript],
+    color: 'from-red-600 to-orange-400'
   },
   {
     id: 'PJT5',
@@ -79,7 +83,8 @@ export const projects: TProject[] = [
       ' la legibilidad en tecnologías de uso cotidiano dentro del desarrollo web (ámbito full stack).' +
       ' Inspirado en los bloques de Lego y la abstracción que estos pueden llegar a generar.'
     ],
-    technologies: [techs.json]
+    technologies: [techs.json],
+    color: 'from-orange-500 to-pink-600'
   },
   {
     id: 'PJT6',
@@ -95,7 +100,8 @@ export const projects: TProject[] = [
       ' correspondientes al lenguaje. Su objetivo es permitir, probar y escribir código con un' +
       ' acercamiento bastante similar a lo que provee Visual Studio Code para una mayor familiaridad.'
     ],
-    technologies: [techs.nextJs, techs.docker, techs.typescript, techs.nestJs, techs.tailwindCss]
+    technologies: [techs.nextJs, techs.docker, techs.typescript, techs.nestJs, techs.tailwindCss],
+    color: 'from-orange-600 to-yellow-500'
   },
   {
     id: 'PJT7',
@@ -111,7 +117,8 @@ export const projects: TProject[] = [
       ' y capacidad básica de comprensión de respuestas mediante un desarrollo pensado de forma generalizada y' +
       ' reutilizable para cualquier rubro o comunidad (Mira debajo a la derecha).'
     ],
-    technologies: [techs.reactJs, techs.typescript, techs.nestJs, techs.redis, techs.docker, techs.mysql, techs.tailwindCss]
+    technologies: [techs.reactJs, techs.typescript, techs.nestJs, techs.redis, techs.docker, techs.mysql, techs.tailwindCss],
+    color: 'from-purple-600 to-cyan-500'
   },
   {
     id: 'PJT8',
@@ -127,7 +134,8 @@ export const projects: TProject[] = [
       ' JSON Web Token, toma de órdenes, búsqueda de productos, soporte para lectura de imágenes y manejo en' +
       ' base de datos para persistencia de todas las transacciones ocurrentes.'
     ],
-    technologies: [techs.typescript, techs.nestJs, techs.docker, techs.postgresql]
+    technologies: [techs.typescript, techs.nestJs, techs.docker, techs.postgresql],
+    color: 'from-green-600 to-green-300'
   },
   {
     id: 'PJT9',
@@ -143,7 +151,8 @@ export const projects: TProject[] = [
       ' cualquier lenguaje y tecnología, basándose en una de mis paletas de colores favoritas (morado,' +
       ' rojo, verde y azul). El fin de este proyecto fue familiarizarse con la estructura JSON.'
     ],
-    technologies: [techs.json]
+    technologies: [techs.json],
+    color: 'from-red-600 to-purple-600'
   },
   {
     id: 'PJT10',
@@ -159,6 +168,7 @@ export const projects: TProject[] = [
       ' fue agilizar el proceso de escritura y aprender a utilizar APIs nativas del navegador (reconocimiento de voz).' +
       ' Tiene soporte para navegadores Google Chrome y Opera.'
     ],
-    technologies: [techs.html, techs.css3, techs.javascript]
+    technologies: [techs.html, techs.css3, techs.javascript],
+    color: 'from-pink-600 to bg-purple-600'
   }
 ]
