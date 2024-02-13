@@ -20,7 +20,18 @@ export const Modal: FC<PropsWithChildren<Props>> = ({ children, onClose }) => {
                 onClick={onClose}
               >
               </div>
-              {children}
+              <article className='relative bg-c1 p-4 sm:p-10 w-full h-[90vh] overflow-scroll
+                lg:overflow-hidden lg:h-auto max-w-[62rem]
+                rounded-lg border-[1px] border-c3-1 scaleIn'
+              >
+                <button
+                  className='absolute top-5 right-5 cursor-pointer font-bold text-xl'
+                  onClick={onClose}
+                >
+                  {'X'}
+                </button>
+                {children}
+              </article>
             </div>,
             document.getElementById('modal')!
           )
