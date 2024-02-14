@@ -11,7 +11,7 @@ export const ProjectsSection = () => {
     >
       <div className='h-full m-auto w-full max-w-[62rem]'>
 
-        <h3 className='text-start text-4xl font-bold mb-6'>
+        <h3 className='text-start text-3xl md:text-4xl font-bold mb-6'>
           <span className='bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent'>
             {' Portafolio'}
           </span>
@@ -24,14 +24,14 @@ export const ProjectsSection = () => {
             {' proyectos'}
           </span>
         </h3>
-        <h4 className='text-start text-xl opacity-70'>
+        <h4 className='text-start text-lg md:text-xl opacity-70'>
             Desarrollos y soluciones orientadas a distintos rubros y comunidades
         </h4>
         <hr className='mt-5 border-[1px] border-c3-1'/>
-        <ul className='flex gap-5 mt-4 mb-10'>
-          <li className='text-xl'>Full-stack</li>
-          <li className='text-xl'>Frontend</li>
-          <li className='text-xl'>Backend</li>
+        <ul className='flex gap-5 mt-4 mb-10 text-lg md:text-xl'>
+          <li>Full-stack</li>
+          <li>Frontend</li>
+          <li>Backend</li>
         </ul>
         <ProjectPanel projects={projects}/>
       </div>
