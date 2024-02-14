@@ -37,6 +37,7 @@ export const ProjectPanel: FC<Props> = ({ projects }) => {
             <SwiperSlide
               key={project.id}
               onClick={() => { handleProjectSelected(project.id) }}
+              className='cursor-pointer hover:opacity-60 duration-75 transition-opacity'
             >
               <ProjectCard {...project}/>
             </SwiperSlide>

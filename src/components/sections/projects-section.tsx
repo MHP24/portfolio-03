@@ -27,12 +27,7 @@ export const ProjectsSection = () => {
         <h4 className='text-start text-lg md:text-xl opacity-70'>
             Desarrollos y soluciones orientadas a distintos rubros y comunidades
         </h4>
-        <hr className='mt-5 border-[1px] border-c3-1'/>
-        <ul className='flex gap-5 mt-4 mb-10 text-lg md:text-xl'>
-          <li>Full-stack</li>
-          <li>Frontend</li>
-          <li>Backend</li>
-        </ul>
+        <hr className='mt-5 mb-8 border-[1px] border-c3-1'/>
         <ProjectPanel projects={projects}/>
       </div>
 

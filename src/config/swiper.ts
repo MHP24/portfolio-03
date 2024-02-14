@@ -13,7 +13,7 @@ export const swiperConfig: SwiperOptions = {
   spaceBetween: 22,
   slidesPerView: 3,
   autoplay: {
-    delay: 2500,
+    delay: 3500,
     disableOnInteraction: false
   },
   breakpoints: {
