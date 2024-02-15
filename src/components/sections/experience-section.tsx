@@ -7,10 +7,10 @@ export const ExperienceSection = () => {
     <section
       id='experiencia'
       className='border-[2px] border-c3-1 border-l-0 border-r-0 w-full py-20 bg-c1
-      px-10 md:px-0'
+        px-10 lg:px-0'
     >
       <div className='flex flex-col items-center m-auto w-full max-w-[62rem]'>
-        <h3 className='text-start mb-16 text-4xl font-bold
+        <h3 className='text-start mb-16 text-3xl md:text-4xl font-bold
           bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent'
         >
           Experiencia

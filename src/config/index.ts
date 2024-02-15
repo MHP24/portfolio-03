@@ -1,0 +1,1 @@
+export { swiperConfig } from './swiper'

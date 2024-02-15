@@ -16,13 +16,13 @@ export const TimelineCard: FC<Props> = ({ title, date, description, latest }) =>
         </svg>
       </span>
       <div className='ml-5'>
-        <h3 className='flex items-center mb-1 text-lg font-semibold text-c3'>
+        <h3 className='flex items-center mb-1 text-md md:text-lg font-semibold text-c3'>
           { title }
 
           {/* First timeline item */}
           {
             latest &&
-          <span className='bg-c3 text-c2 font-bold text-md me-2 px-2.5 py-0.5 rounded ms-3'>Ahora</span>
+          <span className='bg-c3 text-c2 font-bold text-sm md:text-md me-2 px-2.5 py-0.5 rounded ms-3'>Ahora</span>
           }
         </h3>
         <time className='block mb-2 text-lg leading-none text-c3 opacity-90'>

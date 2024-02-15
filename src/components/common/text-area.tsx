@@ -15,7 +15,7 @@ export const TextArea: FC<Props> = forwardRef<HTMLTextAreaElement, Props>(
           label && (
             <label
               htmlFor={name}
-              className={`text-lg ${isValid ? 'text-white' : 'text-red-600 font-bold'}`}
+              className={`text-md md:text-lg ${isValid ? 'text-white' : 'text-red-500'}`}
             >
               {label}
             </label>
@@ -26,8 +26,8 @@ export const TextArea: FC<Props> = forwardRef<HTMLTextAreaElement, Props>(
           ref={ref}
           name={name}
           placeholder={placeholder}
-          className='w-full outline-none py-2 px-4 text-lg rounded-lg
-            bg-c6 border-2 border-c3-1'
+          className={`w-full outline-none py-2 px-4 text-lg rounded-lg
+            bg-c6 border-2 ${isValid ? 'border-c3-1' : 'border-[#ff000030]'}`}
         >
         </textarea>
       </div>

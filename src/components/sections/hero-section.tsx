@@ -5,7 +5,7 @@ export const HeroSection = () => {
     <section
       id='inicio'
       className='h-screen w-full bg-fixed bg-cover bg-no-repeat bg-center
-      px-4 relative'
+      px-4'
     >
 
       <div className='h-full flex flex-col items-center text-center md:text-start md:items-start w-full px-20 justify-center z-1'
