@@ -44,7 +44,7 @@ export const ProjectPanel: FC<Props> = ({ projects }) => {
           ))
         }
       </Swiper>
-
+      
       {/* Project modal on click */}
       {
         projectSelected !== null
