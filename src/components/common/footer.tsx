@@ -10,9 +10,9 @@ export const Footer = () => {
         <div className='flex flex-col lg:flex-row items-center md:justify-between gap-5'>
           <div className='flex flex-col md:flex-row gap-4 items-center'>
             <Logo/>
-            <h2 className='text-xl font-bold'>Miguel Henríquez Pacheco</h2>
+            <h2 className='text-lg md:text-xl font-bold'>Miguel Henríquez Pacheco</h2>
           </div>
-          <ul className='flex gap-6 flex-wrap justify-center items-center mb-6 text-md font-semibold my-auto'>
+          <ul className='flex gap-6 flex-wrap justify-center items-center mb-6 text-md my-auto'>
             {
               webSections.map(({ path, label }) => (
                 <li key={`footer-link-${path}-${label}`}>

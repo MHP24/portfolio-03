@@ -17,7 +17,7 @@ export default function RootLayout ({
 }>) {
   return (
     <html lang='es' className='bg-c1 bg-mainBg bg-center bg-fixed bg-cover'>
-      <body className={`${mainFont.className} text-c3  max-w-[120rem] mx-auto overflow-x-hidden`}>
+      <body className={`${mainFont.className} text-c3 max-w-[120rem] mx-auto overflow-x-hidden`}>
         <Navbar/>
         <main className='min-h-screen sm:ml-20 z-10'>
           { children }
