@@ -22,8 +22,8 @@ export const Footer = () => {
             }
           </ul>
         </div>
-        <hr className='my-6 sm:mx-auto border-gray-500 lg:my-8' />
-        <span className='block text-sm text-gray-500 text-center'>
+        <hr className='my-6 sm:mx-auto border-c3-1 lg:my-8' />
+        <span className='block text-sm text-c3 text-center'>
           © {new Date().getFullYear()}
           {' Miguel Henríquez Pacheco. Todos los derechos reservados.'}</span>
       </div>
