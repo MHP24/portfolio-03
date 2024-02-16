@@ -12,7 +12,7 @@ export const ProjectCard: FC<Props> = ({ asset, title, width = 350, height = 200
 
     < >
       <Image
-        priority={true}
+        priority={false}
         className='rounded-xl border-c3-1 border-2 mx-auto'
         src={`/img/projects/${asset}`}
         alt={`proyecto ${title}`}

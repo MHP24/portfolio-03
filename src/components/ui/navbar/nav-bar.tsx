@@ -30,11 +30,13 @@ export const Navbar = () => {
       {/* Mobile navbar */}
       <nav className='fixed sm:hidden top-0 left-0 w-full border-b-[1px] border-c3-1 bg-c8 z-10'>
         <ul className='flex gap-4 items-center'>
-          <Link
-            href={'#inicio'}
-            className='w-14 aspect-square bg-black grid items-center text-center select-none'>
-            <h2 className='text-2xl font-bold'>M</h2>
-          </Link>
+          <li>
+            <Link
+              href={'#inicio'}
+              className='w-14 aspect-square bg-black grid items-center text-center select-none'>
+              <h2 className='text-2xl font-bold'>M</h2>
+            </Link>
+          </li>
           {
             webSections.slice(1).map((option, key) => (
               <li key={`mobile-nav-item-${key}`}>
