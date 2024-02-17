@@ -4,7 +4,6 @@ import { type Metadata } from 'next'
 
 export const obtainPageMetadata = (): Metadata => {
   const metadata: Metadata = {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_URL ?? ''),
     title: 'Miguel HP',
     description: 'Portafolio de Miguel Henríquez Pacheco - Desarrollador full stack',
     openGraph: {
