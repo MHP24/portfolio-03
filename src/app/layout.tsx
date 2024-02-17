@@ -7,18 +7,10 @@ import './globals.css'
 // * Components
 import { Footer, Navbar } from '@/components'
 import { type Metadata } from 'next'
+import { obtainPageMetadata } from '@/actions'
 
-export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_URL ?? ''),
-  title: 'Miguel HP',
-  description: 'Portafolio de Miguel Henríquez Pacheco - Desarrollador full stack',
-  openGraph: {
-    title: 'Miguel HP',
-    description: 'Portafolio de Miguel Henríquez Pacheco - Desarrollador full stack'
-  },
-  other: {
-    'google-site-verification': 'ICbjXqY7xXx8fUXPxgS8L2rEY1YDA06hh0928e500t4'
-  }
+export const generateMetadata = (): Metadata => {
+  return obtainPageMetadata()
 }
 
 export default function RootLayout ({
