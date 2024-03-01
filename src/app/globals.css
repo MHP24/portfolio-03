@@ -22,23 +22,6 @@
   }
 }
 
-.rightToLeft {
-  animation: rightToLeft .7s ease-in;
-}
-
-@keyframes rightToLeft {
-  from {
-    opacity: 0%;
-    transform: translateX(100%);
-  }
-
-  to {
-    opacity: 100%;
-    transform: translateX(0%);
-  }
-}
-
-
 .scaleIn {
   animation: scaleIn .25s;
 }
@@ -63,4 +46,8 @@
 
 .swiper-pagination-bullet-active {
   @apply bg-gradient-to-r from-orange-600 to-pink-600 !important;
+}
+
+.clip-triangle {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
