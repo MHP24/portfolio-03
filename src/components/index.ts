@@ -32,3 +32,7 @@ export { ProjectModal } from './ui/projects/project-modal'
 export { ContactForm } from './ui/contact/contact-form'
 export { ContactMedias } from './ui/contact/contact-medias'
 export { Media } from './ui/contact/media'
+
+// * Tech Slider
+export { TechSlide } from './ui/slider/tech-slide'
+export { TechSlider } from './ui/slider/tech-slider'
