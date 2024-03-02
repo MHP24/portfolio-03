@@ -6,7 +6,7 @@ export const ExperienceSection = () => {
   return (
     <section
       id='experiencia'
-      className='border-[2px] border-c3-1 border-l-0 border-r-0 w-full py-20 bg-c1
+      className='border-b-[2px] border-c3-1 w-full py-20 bg-c1
         px-10 lg:px-0'
     >
       <div className='flex flex-col items-center m-auto w-full max-w-[62rem]'>

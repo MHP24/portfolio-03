@@ -7,7 +7,7 @@ export const ProjectsSection = () => {
       id='proyectos'
       className='w-full
       py-14 overflow-hidden relative bg-c4
-      border-b-[1px] border-c3-1 border-l-0 border-r-0 px-10 xl:px-0'
+      border-b-[1px] border-c3-1 px-10 xl:px-0'
     >
       <div className='h-full m-auto w-full max-w-[62rem]'>
 

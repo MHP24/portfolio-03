@@ -5,7 +5,7 @@ export const timeline = [
     description: 'Diseño de soluciones a gran escala, automatizaciones, control de infraestructura y desarrollo.'
   },
   {
-    title: 'Desarrollador full-stack / CLO S.A.',
+    title: 'Desarrollador full stack / CLO S.A.',
     date: 'enero 2023 - enero 2024',
     description: 'Desarrollo e integraciones con servicios cognitivos, redes sociales y webs a medida.'
   },
