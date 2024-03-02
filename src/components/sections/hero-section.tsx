@@ -28,7 +28,13 @@ export const HeroSection = () => {
                 href='https://github.com/MHP24'
                 className='bg-c8 border-c3-1 font-semibold'
               >
-                <Image src={'/svgs/medias/github.svg'} width={30} height={30} alt='github'/>
+                <Image
+                  src={'/svgs/medias/github.svg'}
+                  width={30}
+                  height={30}
+                  alt='github'
+                  priority={true}
+                />
                 Proyectos
               </LinkButton>
             </li>
@@ -38,7 +44,13 @@ export const HeroSection = () => {
                 className='bg-c3 text-c4 bg-opacity-90
                   font-semibold hover:bg-c3 hover:bg-opacity-100 hover:text-c4'
               >
-                <Image src={'/svgs/medias/linkedin.svg'} width={30} height={30} alt='linkedin'/>
+                <Image
+                  src={'/svgs/medias/linkedin.svg'}
+                  width={30}
+                  height={30}
+                  alt='linkedin'
+                  priority={true}
+                />
                 Conectar
               </LinkButton>
             </li>
