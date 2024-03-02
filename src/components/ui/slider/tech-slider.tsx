@@ -7,6 +7,13 @@ import { TechSlide } from './tech-slide'
 export const TechSlider = () => {
   const [slideIndex, setSlideIndex] = useState<number>(0)
 
+  const techs = techSlides.map((tech) => (
+    <TechSlide
+      key={`tech-${tech}-${slideIndex}`}
+      tech={tech}
+    />
+  ))
+
   useEffect(() => {
     const interval = setInterval(() => {
       setSlideIndex(
@@ -22,9 +29,8 @@ export const TechSlider = () => {
   }, [slideIndex])
 
   return (
-    <TechSlide
-      key={`tech-${slideIndex}`}
-      tech={techSlides[slideIndex]}
-    />
+    <>
+      {techs[slideIndex]}
+    </>
   )
 }
