@@ -6,7 +6,7 @@ export const HeroSection = () => {
     <section
       id='inicio'
       className='h-screen w-full bg-fixed bg-cover bg-no-repeat bg-center
-      px-4 grid place-items-center'
+      px-4 grid place-items-center relative overflow-x-hidden'
     >
 
       <div className='flex flex-col items-center lg:flex-row w-[95%] gap-8 lg:-mt-4'>
@@ -34,7 +34,7 @@ export const HeroSection = () => {
             </li>
             <li className='w-36 md:w-48'>
               <LinkButton
-                href=''
+                href='https://linkedin.com/in/miguel-henríquez-pacheco-1831501b8'
                 className='bg-c3 text-c4 bg-opacity-90
                   font-semibold hover:bg-c3 hover:bg-opacity-100 hover:text-c4'
               >
@@ -52,7 +52,7 @@ export const HeroSection = () => {
       </div>
 
       {/* Polygon */}
-      <div className='absolute right-0 top-0 w-full sm:w-[70%] h-full -z-10
+      <div className='absolute right-0 top-0 w-full sm:w-[75%] h-full -z-10
         clip-triangle bg-c3-1'>
       </div>
     </section>
