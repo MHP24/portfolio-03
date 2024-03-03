@@ -31,7 +31,6 @@ WORKDIR /app
 COPY --from=build /app/.next/ ./.next
 COPY --from=prodDeps /app/node_modules ./node_modules
 COPY package.json package.json
-RUN yarn add sharp -g
 COPY /public ./public
 COPY next.config.mjs next.config.mjs
 CMD [ "yarn", "start:prod" ]

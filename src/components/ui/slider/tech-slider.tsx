@@ -5,32 +5,40 @@ import { techSlides } from '@/constants'
 import { TechSlide } from './tech-slide'
 
 export const TechSlider = () => {
-  const [slideIndex, setSlideIndex] = useState<number>(0)
-
-  const techs = techSlides.map((tech) => (
-    <TechSlide
-      key={`tech-${tech}-${slideIndex}`}
-      tech={tech}
-    />
-  ))
+  const [slide, setSlide] = useState<{ i: number, slides: string[] }>({
+    i: 0,
+    slides: techSlides
+  })
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSlideIndex(
-        slideIndex + 1 > techSlides.length - 1
-          ? 0
-          : slideIndex + 1
-      )
+      const index = slide.i + 1 > techSlides.length - 1
+        ? 0
+        : slide.i + 1
+      console.log({ index })
+      setSlide(prev => ({
+        ...prev,
+        i: index,
+        slides: techSlides
+      }))
     }, 3500)
 
     return () => {
       clearInterval(interval)
     }
-  }, [slideIndex])
+  }, [slide])
 
   return (
-    <>
-      {techs[slideIndex]}
-    </>
+    <ul className='h-full w-full grid place-items-center'>
+      {
+        techSlides.map((tech, i) => (
+          <TechSlide
+            key={`tech-${tech}`}
+            tech={tech}
+            className={i === slide.i ? 'grid' : 'hidden'}
+          />
+        ))
+      }
+    </ul>
   )
 }
