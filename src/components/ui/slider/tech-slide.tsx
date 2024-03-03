@@ -1,13 +1,15 @@
+import { cn } from '@/utils'
 import Image from 'next/image'
 import { type FC } from 'react'
 
 type Props = {
   tech: string
+  className?: string
 }
 
-export const TechSlide: FC<Props> = ({ tech }) => {
+export const TechSlide: FC<Props> = ({ tech, className = '' }) => {
   return (
-    <div className='fade-in relative w-full h-full grid place-items-center'>
+    <li className={cn('fade-in relative w-full h-full place-items-center', className)}>
       <Image src={`/img/3d/${tech}.png`}
         priority={true}
         width={350}
@@ -15,6 +17,6 @@ export const TechSlide: FC<Props> = ({ tech }) => {
         alt={tech}
         className='absolute drop-shadow-lg floating'
       />
-    </div>
+    </li>
   )
 }
