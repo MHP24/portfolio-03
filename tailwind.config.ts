@@ -26,6 +26,13 @@ const config: Config = {
       },
       aspectRatio: {
         '6/7': '6/7'
+      },
+      keyframes: {
+        shimmer: {
+          '100%': {
+            transform: 'translateX(100%)'
+          }
+        }
       }
     }
   },
