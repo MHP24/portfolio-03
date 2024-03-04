@@ -36,3 +36,6 @@ export { Media } from './ui/contact/media'
 // * Tech Slider
 export { TechSlide } from './ui/slider/tech-slide'
 export { TechSlider } from './ui/slider/tech-slider'
+
+// * Skeletons
+export { CardSkeleton } from './ui/skeletons/card-skeleton'

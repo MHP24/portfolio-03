@@ -15,7 +15,6 @@ export const TechSlider = () => {
       const index = slide.i + 1 > techSlides.length - 1
         ? 0
         : slide.i + 1
-      console.log({ index })
       setSlide(prev => ({
         ...prev,
         i: index,
