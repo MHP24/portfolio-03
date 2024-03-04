@@ -11,6 +11,7 @@
   "dependencies": {
     "@emailjs/nodejs": "2.2.0",
     "clsx": "^2.1.0",
+    "cssnano": "6.0.5",
     "next": "14.1.0",
     "react": "18",
     "react-dom": "18",
