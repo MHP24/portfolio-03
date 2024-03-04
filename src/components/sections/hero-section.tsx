@@ -15,12 +15,12 @@ export const HeroSection = () => {
             ¡Hola!👋 Soy Miguel Henr&iacute;quez Pacheco
           </h1>
 
-          <h3 className='text-lg md:text-2xl mt-2'>
+          <h2 className='text-lg md:text-2xl mt-2'>
             Experto en procesos del &aacute;rea TI,
             <span className='font-semibold'> desarrollador </span>
             con <span className='font-semibold'>+1 año de experiencia, </span>
             fan&aacute;tico del Cloud y DevOps.
-          </h3>
+          </h2>
 
           <ul className='flex flex-wrap gap-6 w-full'>
             <li className='w-36 md:w-48'>

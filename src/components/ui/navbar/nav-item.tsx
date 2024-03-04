@@ -21,6 +21,7 @@ export const NavItem: FC<Props> = ({ path, label, asset }) => {
         onMouseLeave={() => { setIsHover(false) }}
       >
         <Image
+          priority={true}
           className='bg-c6 transition-all delay-75 hover:opacity-80 p-3 rounded-full border-[1px] border-c3-1'
           src={`/svgs/${asset}.svg`} alt={label} width={54} height={54}
         />

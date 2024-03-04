@@ -10,7 +10,7 @@ type Props = {
 export const TechSlide: FC<Props> = ({ tech, className = '' }) => {
   return (
     <li className={cn('fade-in relative w-full h-full place-items-center', className)}>
-      <Image src={`/img/3d/${tech}.png`}
+      <Image src={`/img/3d/${tech}.webp`}
         priority={true}
         width={350}
         height={350}
