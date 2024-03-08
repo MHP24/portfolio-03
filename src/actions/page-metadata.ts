@@ -6,6 +6,7 @@ export const obtainPageMetadata = (): Metadata => {
   const metadata: Metadata = {
     title: 'Miguel HP',
     description: 'Portafolio de Miguel Henríquez Pacheco - Desarrollador full stack',
+    metadataBase: new URL(process.env.NEXT_PUBLIC_URL!),
     openGraph: {
       title: 'Miguel HP',
       description: 'Portafolio de Miguel Henríquez Pacheco - Desarrollador full stack',
@@ -15,9 +16,6 @@ export const obtainPageMetadata = (): Metadata => {
           alt: 'Miguel HP'
         }
       ]
-    },
-    other: {
-      'google-site-verification': process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICAITON ?? ''
     }
   }
   return metadata
