@@ -13,8 +13,8 @@ export const LinkButton: FC<PropsWithChildren<Props>> = ({ className, children, 
 
   return (
     <Link
-      {...rest}
       target='_blank'
+      {...rest}
       className={cn(base, responsive, transition, className)}
     >
       {children}
