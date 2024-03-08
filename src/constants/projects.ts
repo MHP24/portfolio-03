@@ -32,7 +32,7 @@ export const projects: TProject[] = [
       ' la entrega de información acerca de mis servicios y solicitar o agendar en caso de ser requerido mediante su' +
       ' automatización por correo electrónico.'
     ],
-    technologies: [techs.nodeJs, techs.expressJs, techs.typescript]
+    technologies: [techs.nodeJs, techs.expressJs, techs.typescript, techs.docker]
   },
   {
     id: 'PJT3',
@@ -47,7 +47,7 @@ export const projects: TProject[] = [
       'Bot de Discord orientado al entretenimiento, este reproduce música, genera imágenes y cuenta chistes. Permite ser' +
       ' utilizado por más de un usuario a la vez y soporta las últimas características de "slash commands" (comandos /).'
     ],
-    technologies: [techs.nodeJs, techs.typescript]
+    technologies: [techs.nodeJs, techs.typescript, techs.docker]
   },
   {
     id: 'PJT4',

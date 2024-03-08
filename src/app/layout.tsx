@@ -6,12 +6,6 @@ import './globals.css'
 
 // * Components
 import { Footer, Navbar } from '@/components'
-import { type Metadata } from 'next'
-import { obtainPageMetadata } from '@/actions'
-
-export const generateMetadata = (): Metadata => {
-  return obtainPageMetadata()
-}
 
 export default function RootLayout ({
   children
