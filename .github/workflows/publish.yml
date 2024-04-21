@@ -41,10 +41,11 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           port: ${{ secrets.SSH_PORT }}
           username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd ${{ secrets.PROJECT_DIR }}
-            docker login ghcr.io -u mhp24 -p ${{ secrets.TOKEN_CD }}
+            docker login ghcr.io -u ${{ secrets.DOCKER_PRODUCTION_REGISTRY }} -p ${{ secrets.TOKEN_CD }}
             docker compose -f docker-compose.prod.yml down
             docker container prune -f
             docker image rm ${{ secrets.DOCKER_PRODUCTION_IMAGE }} -f 
