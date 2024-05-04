@@ -49,22 +49,22 @@ export const projects: TProject[] = [
     ],
     technologies: [techs.nodeJs, techs.typescript, techs.docker]
   },
-  {
-    id: 'PJT4',
-    title: 'Tic tac toe online',
-    links: {
-      repository: 'https://github.com/MHP24/tic-tac-toe-online',
-      production: 'https://tic-tac-toe.mg-hp.com/'
-    },
-    asset: 'tic-tac-toe-online.jpg',
-    category: 'Full-stack',
-    description: [
-      '"El juego del gato", pero en esta ocasión en línea y en tiempo real. Haciendo uso de websockets,' +
-      ' permite crear salas y establecer la cantidad de rounds junto a su duración por turno (soporte para' +
-      ' 2 jugadores en tableros de 3x3). '
-    ],
-    technologies: [techs.nodeJs, techs.expressJs, techs.reactJs, techs.tailwindCss, techs.typescript]
-  },
+  // {
+  //   id: 'PJT4',
+  //   title: 'Tic tac toe online',
+  //   links: {
+  //     repository: 'https://github.com/MHP24/tic-tac-toe-online',
+  //     production: 'https://tic-tac-toe.mg-hp.com/'
+  //   },
+  //   asset: 'tic-tac-toe-online.jpg',
+  //   category: 'Full-stack',
+  //   description: [
+  //     '"El juego del gato", pero en esta ocasión en línea y en tiempo real. Haciendo uso de websockets,' +
+  //     ' permite crear salas y establecer la cantidad de rounds junto a su duración por turno (soporte para' +
+  //     ' 2 jugadores en tableros de 3x3). '
+  //   ],
+  //   technologies: [techs.nodeJs, techs.expressJs, techs.reactJs, techs.tailwindCss, techs.typescript]
+  // },
   {
     id: 'PJT5',
     title: 'Abstract MH',
