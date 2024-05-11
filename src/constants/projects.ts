@@ -144,21 +144,21 @@ export const projects: TProject[] = [
       ' rojo, verde y azul). El fin de este proyecto fue familiarizarse con la estructura JSON.'
     ],
     technologies: [techs.json]
-  },
-  {
-    id: 'PJT10',
-    title: 'Speech to text',
-    links: {
-      repository: 'https://github.com/MHP24/Speech-to-text',
-      production: 'https://mhp24.github.io/Speech-to-text'
-    },
-    asset: 'speech-to-text.jpg',
-    category: 'Frontend',
-    description: [
-      'Sitio web para hacer transformaciones de voz a texto en tiempo real. La finalidad de este proyecto' +
-      ' fue agilizar el proceso de escritura y aprender a utilizar APIs nativas del navegador (reconocimiento de voz).' +
-      ' Tiene soporte para navegadores Google Chrome y Opera.'
-    ],
-    technologies: [techs.html, techs.css3, techs.javascript]
   }
+  // {
+  //   id: 'PJT10',
+  //   title: 'Speech to text',
+  //   links: {
+  //     repository: 'https://github.com/MHP24/Speech-to-text',
+  //     production: 'https://mhp24.github.io/Speech-to-text'
+  //   },
+  //   asset: 'speech-to-text.jpg',
+  //   category: 'Frontend',
+  //   description: [
+  //     'Sitio web para hacer transformaciones de voz a texto en tiempo real. La finalidad de este proyecto' +
+  //     ' fue agilizar el proceso de escritura y aprender a utilizar APIs nativas del navegador (reconocimiento de voz).' +
+  //     ' Tiene soporte para navegadores Google Chrome y Opera.'
+  //   ],
+  //   technologies: [techs.html, techs.css3, techs.javascript]
+  // }
 ]
