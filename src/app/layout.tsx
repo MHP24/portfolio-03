@@ -27,7 +27,7 @@ export default function RootLayout ({
 
         {/* Chatbot script */}
         <script
-          src='https://chat.mg-hp.com/files/scripts/chat/main.js'
+          src='https://chat.mg-hp.com/files/scripts/main.js'
           data-mhp-url='https://chat.mg-hp.com'
         />
       </body>
